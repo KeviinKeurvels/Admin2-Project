@@ -5,11 +5,12 @@ $TTL 86400      ; 1 day
 
 @               IN      NS   ns.l1-3.ephec-ti.be.
 @               IN      MX  10  mail
-// mettre RR VoIP
+; mettre RR VoIP
 
-@               IN      A       176.96.231.161
-mail            IN      A       176.96.231.159
-resolver        IN      A       176.96.231.161
-ns              IN      A       176.96.231.161
+@		IN	A       176.96.231.161
+mail		IN	A       176.96.231.159
+resolver		IN	A       176.96.231.161
+ns		IN	A       176.96.231.161
 soa		IN	A	176.96.231.161
-www             IN      A       176.96.231.159
+www		IN	A       176.96.231.159
+b2b		IN	A	176.96.231.159
