@@ -9,7 +9,8 @@ RUN apt clean
 
 RUN apt-get install nano
 RUN apt install net-tools
-#RUN apt install dnsutils
-#RUN apt-get install iputils-ping
+RUN apt install dnsutils
+RUN apt-get install iputils-ping
 
-#EXPOSE 80 CMD [“apache2ctl”, “-D”, “FOREGROUND”]
+EXPOSE 80 
+CMD [“apache2ctl”, “-D”, “FOREGROUND”]
