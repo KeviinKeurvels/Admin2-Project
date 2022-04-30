@@ -6,3 +6,6 @@ Pour le client
  Pour le mail
 ----------------
  sudo docker run -d --name mail -it e7cd
+ 
+ sudo docker run -d --name mail2 -it b867
+
