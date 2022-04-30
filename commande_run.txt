@@ -1,3 +1,8 @@
 Pour le client
 ----------------
  sudo docker run -d --name client -it f7c8
+ 
+ 
+ Pour le mail
+----------------
+ sudo docker run -d --name mail -it e7cd
