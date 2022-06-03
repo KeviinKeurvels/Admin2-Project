@@ -1,0 +1,15 @@
+set header_cache =~/.mutt/cache/headers
+set message_cachedir =~/.mutt/cache/bodies
+set realname = "toto@l1-3.ephec-ti.be"
+set from = "toto@l1-3.ephec-ti.be"
+#set edit_headers=yes
+set ssl_starttls=no
+set ssl_force_tls=no
+# Imap settings
+set imap_user = "toto@l1-3.ephec-ti.be"
+set imap_pass = "toto"
+set folder = "imap://toto@l1-3.ephec-ti.be@mail.l1-3.ephec-ti.be"
+set smtp_url = "smtp://$imap_user:$imap_pass@mail.l1-3.ephec-ti.be"
+set smtp_pass = $imap_pass
+#set beep_new
+set editor = "nano"
