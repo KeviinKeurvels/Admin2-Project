@@ -10,7 +10,7 @@ RUN apt install net-tools
 RUN apt install dnsutils -y
 RUN apt-get install iputils-ping -y
 RUN apt-get install mutt -y
-RUN apt install lynx -y
+RUN apt install links -y
 
 CMD tail -f /dev/null
 
