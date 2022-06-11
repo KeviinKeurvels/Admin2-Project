@@ -4,14 +4,13 @@ $TTL 86400      ; 1 day
 
 
 @			NS   soa.l1-3.ephec-ti.be.
-@			MX 10 mail.l1-3.ephec-ti.be.
+@			MX 10	 mail.l1-3.ephec-ti.be.
 
 
 ; a changer en fonction des IP privees des differents containers
-mail		IN	A       10.0.2.16
-resolver		IN	A       10.0.2.9
-ns		IN	A	10.0.2.10
-;soa		IN	A	10.0.2.8
-soa		IN	A       172.18.0.3
-www		IN	A	10.0.2.36
-test		IN	A	10.0.2.22
+mail		IN	A       172.19.0.16
+resolver		IN	A       172.19.0.5
+ns		IN	A	172.19.0.10
+soa		IN	A       172.19.0.3
+www		IN	A	172.19.0.36
+b2b		IN	A	172.19.0.36
