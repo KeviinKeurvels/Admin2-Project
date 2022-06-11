@@ -1,0 +1,16 @@
+set header_cache ="~/.mutt/cache/headers"
+set message_cachedir ="~/.mutt/cache/bodies"
+set realname = "secretaire"
+set from = "secretaire@l1-3.ephec-ti.be"
+#set edit_headers=yes
+set ssl_starttls=no
+set ssl_force_tls=no
+# Imap settings
+set imap_user = "secretaire@l1-3.ephec-ti.be"
+set imap_pass = "admin"
+set folder = "imap://secretaire@mail.l1-3.ephec-ti.be"
+set spoolfile ="+INBOX"
+set smtp_url = "smtp://secretaire@mail.l1-3.ephec-ti.be"
+set smtp_pass = $imap_pass
+#set beep_new
+set editor = "nano"

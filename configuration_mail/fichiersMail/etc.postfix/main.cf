@@ -5,13 +5,41 @@ mydomain = l1-3.ephec-ti.be
 # Outgoing mail must use this as source address domain
 myorigin = $mydomain
 # Accepting local mail delivery for those destinations
-mydestination = $myhostname, localhost.$mydomain, localhost, $mydomain, localho>
+mydestination = $myhostname, localhost.$mydomain, localhost, $mydomain, localhost.l1-3.ephec-ti.be
 
 smtpd_banner = $myhostname ESMTP $mail_name
 
 # Network from which we accept smtp connexions
-mynetworks = 172.19.0.0/24 176.96.231.0/24 127.0.0.0/8 [::1]/128
-smtpd_relay_restrictions = permit_mynetworks, reject
+mynetworks = 172.19.0.0/16 176.96.231.0/24 127.0.0.0/8 [::1]/128
+#smtpd_relay_restrictions = permit_mynetworks, reject
+
+smtpd_sasl_type = dovecot
+# Restrictions
+#smtpd_helo_restrictions =
+#        permit_mynetworks,
+#        permit_sasl_authenticated,
+#        reject_invalid_helo_hostname,
+#        reject_non_fqdn_helo_hostname
+#smtpd_recipient_restrictions =
+#        permit_mynetworks,
+#        permit_sasl_authenticated,
+#        reject_unauth_destination
+#        reject_non_fqdn_recipient,
+#        reject_unknown_recipient_domain,
+#        reject_unlisted_recipient,
+#        reject_unauth_destination
+#smtpd_sender_restrictions =
+#        permit_mynetworks,
+#        permit_sasl_authenticated,
+#        reject_non_fqdn_sender,
+#        reject_unknown_sender_domain
+smtpd_relay_restrictions =
+        permit_mynetworks,
+#        permit_sasl_authenticated,
+        defer_unauth_destination
+
+#smtpd_client_restrictions=
+
 
 #Log configuration
 maillog_file=/var/log/postfix.log
@@ -22,4 +50,4 @@ alias_database =
 # hash:/etc/aliases
 virtual_alias_maps =
 # hash:/etc/postfix/virtual
-#home_mailbox = Maildir/
+home_mailbox = Maildir/

@@ -1,8 +1,0 @@
-Le user regarde dans son dossier /var/mail si il y a des mails au lieu d'aller voir sur le serveur
-
-Le github détaille plus tout les problèmes rencontrés: 
-https://github.com/KeviinKeurvels/Admin2-Project/wiki/Etat-des-configurations-du-service-Mail
-
-2 utilisateurs doivent être créé sur l'ordi client: - toto
-						    - tutu
-2 fichiers doivent être créé sur le serveur dans /var/mail et doivent être nommé "toto" et "tutu"
