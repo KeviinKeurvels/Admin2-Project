@@ -8,9 +8,10 @@ $TTL 86400      ; 1 day
 
 
 ; a changer en fonction des IP privees des differents containers
-mail		IN	A       172.19.0.16
-resolver		IN	A       172.19.0.5
-ns		IN	A	172.19.0.10
+mail		IN	A       172.19.0.10
+resolver	IN	A       172.19.0.5
+ns		IN	A	172.19.0.2
 soa		IN	A       172.19.0.3
-www		IN	A	172.19.0.36
-b2b		IN	A	172.19.0.36
+www		IN	A	176.96.231.159 ; mettre l'adresse publique
+b2b		IN	A	176.96.231.159 ; mettre l'adresse publique
+samba		IN	A	172.19.0.6
