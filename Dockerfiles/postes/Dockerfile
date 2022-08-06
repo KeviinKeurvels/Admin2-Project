@@ -6,6 +6,8 @@ RUN apt-get update
 RUN apt-get upgrade
 
 RUN apt-get install nano
+RUN apt-get install smbclient
+RUN apt install cifs-utils
 RUN apt install net-tools
 RUN apt install dnsutils -y
 RUN apt-get install iputils-ping -y
