@@ -1,8 +1,8 @@
 FROM ubuntu:latest
-RUN apt update -y
-RUN apt upgrade -y
-RUN apt install mutt mailutils bsd-mailx -y
-RUN apt install dovecot-imapd dovecot-pop3d -y
+RUN apt update -y 
+RUN apt upgrade -y 
+RUN apt install mutt mailutils bsd-mailx -y --fix-missing
+RUN apt install dovecot-imapd dovecot-pop3d -y --fix-missing
 RUN apt clean
 #Ports SMTP
 #par defaut
