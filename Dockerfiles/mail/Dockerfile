@@ -3,6 +3,10 @@ RUN apt update -y
 RUN apt upgrade -y 
 #RUN apt install mutt mailutils bsd-mailx -y --fix-missing
 #RUN apt install dovecot-imapd dovecot-pop3d -y --fix-missing
+RUN apt install net-tools
+RUN apt install dnsutils -y
+RUN apt-get install iputils-ping -y
+RUN apt-get install nano
 RUN apt clean
 #Ports SMTP
 #par defaut
