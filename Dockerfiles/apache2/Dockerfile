@@ -16,4 +16,5 @@ RUN apt-get install iputils-ping -y
 
 
 EXPOSE 80
+EXPOSE 443
 #CMD [“apache2ctl”, “-D”, “FOREGROUND”]
