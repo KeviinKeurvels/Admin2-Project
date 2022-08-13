@@ -1,4 +1,5 @@
 CREATE USER 'user'@'localhost' IDENTIFIED BY 'user';
+CREATE USER 'user2'@'localhost' IDENTIFIED BY 'user2';
 
 CREATE DATABASE b2bDatabase;
 USE b2bDatabase;
@@ -12,7 +13,9 @@ CREATE TABLE PRODUCT (
   PRIMARY KEY (NPRO) 
 );
 
-GRANT SELECT ON PRODUCT TO 'user'@'%';
+GRANT SELECT ON b2bDatabase.PRODUCT TO 'user'@'localhost';
+
+GRANT INSERT ON b2bDatabase.PRODUCT TO 'user2'@'localhost';
 
 INSERT INTO  PRODUCT  VALUES (1,'obj1',12,32);
 INSERT INTO  PRODUCT  VALUES (2,'obj2',2,30);

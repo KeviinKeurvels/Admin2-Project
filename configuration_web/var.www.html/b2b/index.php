@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+<meta http-equiv="Content-Security-Policy" content="default-src 'self';">
         <head>
                 <meta charset="UTF-8">
                 <title>Page b2b</title>
@@ -20,5 +21,25 @@ try {
     die();
 }
 ?>
+
+<!-- A partir d'ici nouvel version de la page -->
+
+<h2>insérez des nouvelles valeurs à enregistrer dans le système.</h2>
+<br>
+
+<form action="dbadd.php" method="post">
+NPRO: <input type="text" name="npro" required></br>
+NAME: <input type="text" name="name" required></br>
+PRICE: <input type="text" name="price" required></br>
+QUANTITY: <input type="text" name="quantity" required></br>
+<input type="submit">
+</form>
+
+<br>
+<br>
+<br>
+
+
         </body>
 </html>
+
