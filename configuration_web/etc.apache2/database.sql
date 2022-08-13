@@ -16,6 +16,8 @@ CREATE TABLE PRODUCT (
 GRANT SELECT ON b2bDatabase.PRODUCT TO 'user'@'localhost';
 
 GRANT INSERT ON b2bDatabase.PRODUCT TO 'user2'@'localhost';
+REVOKE IF EXISTS SELECT ON b2bDatabase.PRODUCT FROM 'user2'@'localhost';
+
 
 INSERT INTO  PRODUCT  VALUES (1,'obj1',12,32);
 INSERT INTO  PRODUCT  VALUES (2,'obj2',2,30);

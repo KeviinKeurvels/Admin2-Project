@@ -1,17 +1,20 @@
 $ORIGIN 0.19.172.in-addr.arpa.
 $TTL 86400
-@     IN     SOA    ns.vps-ee8cef5f.vps.ovh.net.     he201962.students.ephec.be. (
+@     IN     SOA    ns.l1-3.ephec-ti.be.    he201962.students.ephec.be. (
                     2001062501 ; serial
                     21600      ; refresh after 6 hours
                     3600       ; retry after 1 hour
                     604800     ; expire after 1 week
                     86400 )    ; minimum TTL of 1 day
 
-      IN     NS     soa.vps-ee8cef5f.vps.ovh.net.
+      IN     NS     soa.l1-3.ephec-ti.be.
 
-2    IN     PTR    ns.vps-ee8cef5f.vps.ovh.net.
-3    IN     PTR    soa.vps-ee8cef5f.vps.ovh.net.
-4    IN     PTR    forwarder.vps-ee8cef5f.vps.ovh.net.
-5    IN     PTR    resolver.vps-ee8cef5f.vps.ovh.net.
-6    IN     PTR    samba.vps-ee8cef5f.vps.ovh.net.
-10    IN     PTR    mail.vps-ee8cef5f.vps.ovh.net.
+2    IN     PTR    ns.l1-3.ephec-ti.be.
+3    IN     PTR    soa.l1-3.ephec-ti.be.
+4    IN     PTR    forwarder.l1-3.ephec-ti.be.
+5    IN     PTR    resolver.l1-3.ephec-ti.be.
+6    IN     PTR    samba.l1-3.ephec-ti.be.
+7    IN     PTR    ordi1.l1-3.ephec-ti.be.
+8    IN     PTR    ordi2.l1-3.ephec-ti.be.
+9    IN     PTR    ordi3.l1-3.ephec-ti.be.
+10    IN     PTR    mail.l1-3.ephec-ti.be.

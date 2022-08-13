@@ -1,6 +1,6 @@
 # Define server identity
-myhostname = mail.vps-ee8cef5f.vps.ovh.net
-mydomain = vps-ee8cef5f.vps.ovh.net
+myhostname = mail.l1-3.ephec-ti.be.
+mydomain = l1-3.ephec-ti.be.
 
 # Outgoing mail must use this as source address domain
 myorigin = $mydomain
